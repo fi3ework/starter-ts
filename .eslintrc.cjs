@@ -16,11 +16,8 @@ module.exports = defineConfig({
     ecmaVersion: 2021,
   },
   rules: {
+    '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/ban-ts-comment': 'error',
-    '@typescript-eslint/explicit-module-boundary-types': [
-      'error',
-      { allowArgumentsExplicitlyTypedAsAny: true },
-    ],
     '@typescript-eslint/consistent-type-imports': [
       'error',
       { prefer: 'type-imports' },

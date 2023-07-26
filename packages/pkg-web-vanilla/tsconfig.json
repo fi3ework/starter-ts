@@ -1,0 +1,10 @@
+{
+  "extends": ["@tsconfig/strictest/tsconfig", "@tsconfig/esm/tsconfig"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "isolatedModules": true,
+    "declaration": true
+  },
+  "include": ["src"]
+}

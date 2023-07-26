@@ -1,0 +1,38 @@
+{
+  "name": "pkg-web-vanilla",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/fi3ework/pkg-name#readme",
+  "bugs": "https://github.com/fi3ework/pkg-name/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fi3ework/pkg-name.git"
+  },
+  "license": "MIT",
+  "author": "fi3ework <fi3ework@gmail.com>",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "require": "./dist/main.cjs",
+      "import": "./dist/main.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup && tsc",
+    "dev": "vite",
+    "format": "prettier -c src/**",
+    "lint": "eslint src/**",
+    "publint": "publint",
+    "test": "vitest run",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "publint": "^0.1.12",
+    "tsup": "^6.7.0",
+    "unbuild": "^1.2.1",
+    "vite": "^4.4.7"
+  }
+}
