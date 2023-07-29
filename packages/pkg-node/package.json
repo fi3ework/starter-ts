@@ -23,7 +23,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "format": "prettier -c src/**",
-    "lint": "eslint src/**",
+    "lint": "eslint ./src --ext .ts,.js",
     "publint": "publint",
     "test": "vitest run",
     "type-check": "tsc --noEmit"
