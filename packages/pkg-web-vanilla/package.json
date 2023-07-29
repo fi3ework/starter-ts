@@ -15,7 +15,6 @@
   "exports": {
     ".": {
       "types": "./dist/main.d.ts",
-      "require": "./dist/main.cjs",
       "import": "./dist/main.js"
     }
   },
@@ -26,11 +25,11 @@
     "lint": "eslint ./src --ext .ts,.js",
     "publint": "publint",
     "test": "vitest run",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit --emitDeclarationOnly false"
   },
   "devDependencies": {
     "@types/node": "^20.2.5",
-    "publint": "^0.1.12",
+    "publint": "^0.2.0",
     "tsup": "^6.7.0",
     "unbuild": "^1.2.1",
     "vite": "^4.4.7"
